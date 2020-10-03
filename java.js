@@ -8,8 +8,15 @@ function getRandomNumber(upper) {
 //     counter += 1;
 // }
 
-let counter = 0;
+// let counter = 0;
+// do {
+//     console.log(`The random number is ${getRandomNumber(10)}`);
+//     counter ++;
+// } while (counter < 10);
+
+let secret;
 do {
-    console.log(`The random number is ${getRandomNumber(10)}`);
-    counter += 1;
-} while (counter < 10);
+    secret = prompt("Are you over 21?");
+} while (secret != 'yes');
+
+alert("Great your over 21. Welcome!");
