@@ -1,19 +1,52 @@
-<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet@1.0.0"></script>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>About</title>
+    <link href="base.css" rel="stylesheet"> 
+  </head>
+  <body>
+    <main>
+        <h1>
+            Using Deep Learning Algorithms to make Predictions. 
+        </h1>
+    </main>
+    <!-- import the tensorflow bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <!-- import mobilenet -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet@1.0.0"></script>
+    
+    <!-- load the images to make the prediction -->
+    <!-- <img id="img" src="https://upload.wikimedia.org/wikipedia/commons/6/64/The_Puppy.jpg" width = '512px' crossorigin="" />
+    <p id="prediction_output">Loading predictions...</p> -->
+    <img id="img" src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Beer_Mythos_Chania.jpg" width = '512px' crossorigin="" />
+    <p id="prediction_output">Loading predictions...</p>
+    <!-- image of beer -->
+    <img id="img2" src="https://upload.wikimedia.org/wikipedia/commons/6/64/The_Puppy.jpg" width = '512px' crossorigin="" />
+    <p id="prediction_output2">Loading predictions...</p>
+    <script>
+     const image = document.getElementById("img");
+     const predictionOutput = document.getElementById("prediction_output");
+    
+     // Load the model.   
+     mobilenet.load().then(model => {
+       // Classify the image.
+       model.classify(image).then(predictions => {
+         predictionOutput.innerText = "The top prediction is " + predictions[0].className ;
+       });
+     });
+    </script>
+    <script>
+        const image2 = document.getElementById("img2");
+        const predictionOutput2 = document.getElementById("prediction_output2");
+        mobilenet.load().then(model => {
+          // Classify the image.
+          model.classify(image2).then(predictions2 => {
+            predictionOutput2.innerText = "The top prediction is " + predictions2[0].className ;
+          });
+        });
+       </script>
+   
+  </body>
+</html>
 
-
-<img id="img" src="https://upload.wikimedia.org/wikipedia/commons/6/64/The_Puppy.jpg" width = '512px' crossorigin="" />
-<p id="prediction_output">Loading predictions...</p>
-
-<script>
- const image = document.getElementById("img");
- const predictionOutput = document.getElementById("prediction_output");
-
- // Load the model.   
- mobilenet.load().then(model => {
-   // Classify the image.
-   model.classify(image).then(predictions => {
-     predictionOutput.innerText = "The top prediction is " + predictions[0].className ;
-   });
- });
-</script>
