@@ -4,51 +4,72 @@ const order1 = [
     `sweet potato`
      ];
 
-     console.log(order1.length)
-     console.log(order1[0])
-     console.log(order1[1])
-     console.log(order1[2])
+    function createOrder1ItemList(arr) {
+        let items = '';
+        for (let i= 0; i < arr.length; i++ ) {
+            items += `<li>${arr[i]}</li>`
+        }
+        return items;
+    }
+    document.querySelector('main').innerHTML = `
+    <ol>
+    ${createOrder1ItemList(order1)}
+    </ol>`;
 
-     order1.push('Diet coke', 'Small Pizza');
-     console.log(order1.length)
+    const scores = [ 20, 50, 75, 100, 115 ];
+    let total = 0;
 
-     order1.unshift('Sweet tea', `Dressed Cheese Burger`)
-     console.log(order1.length)
+    for (let i = 0; i < scores.length; i++) {
+        total += scores[i];
+    }
 
-     order1.pop();
-     console.log(order1.length)
+    console.log( total / scores.length);
 
-     let lastItem = order1.pop();
-     console.log(lastItem)
-     console.log(order1.length)
+//      console.log(order1.length)
+//      console.log(order1[0])
+//      console.log(order1[1])
+//      console.log(order1[2])
 
-     let secondItem = order1.shift();
-     console.log(secondItem)
-     console.log(order1.length)
+//      order1.push('Diet coke', 'Small Pizza');
+//      console.log(order1.length)
 
-var numbers = [1, 2, 3, 4, 5, 6 ,7 ,8 ,9, 10];
-     console.log(numbers)
+//      order1.unshift('Sweet tea', `Dressed Cheese Burger`)
+//      console.log(order1.length)
 
+//      order1.pop();
+//      console.log(order1.length)
 
-     // Spread operator combine arrays, or lists
+//      let lastItem = order1.pop();
+//      console.log(lastItem)
+//      console.log(order1.length)
 
-     const mathStudents = [
-         'Marty',
-         'Jennifer',
-         'Lorraine',
-         'Goldie'
-     ];
+//      let secondItem = order1.shift();
+//      console.log(secondItem)
+//      console.log(order1.length)
 
-     const scienceStudents = [
-         'Emmett',
-         'Clara',
-         'Needles',
-         'Strickland'
-     ];
-
-     const students= [...mathStudents, ...scienceStudents];
-     console.log(students)
+// var numbers = [1, 2, 3, 4, 5, 6 ,7 ,8 ,9, 10];
+//      console.log(numbers)
 
 
-var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-console.log(Math.min(...numbers));
+//      // Spread operator combine arrays, or lists
+
+//      const mathStudents = [
+//          'Marty',
+//          'Jennifer',
+//          'Lorraine',
+//          'Goldie'
+//      ];
+
+//      const scienceStudents = [
+//          'Emmett',
+//          'Clara',
+//          'Needles',
+//          'Strickland'
+//      ];
+
+//      const students= [...mathStudents, ...scienceStudents];
+//      console.log(students)
+
+
+// var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// console.log(Math.min(...numbers));
