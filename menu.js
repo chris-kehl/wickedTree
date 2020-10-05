@@ -1,6 +1,6 @@
 const order1 = [
     `English Ale`,
-    `medium Ribeye`,
+    `Medium Ribeye`,
     `sweet potato`
      ];
 
