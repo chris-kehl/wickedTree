@@ -1,29 +1,46 @@
-const order1 = [
-    `English Ale`,
-    `Medium Ribeye`,
-    `sweet potato`
-     ];
+// const order1 = [
+//     `English Ale`,
+//     `Medium Ribeye`,
+//     `sweet potato`
+//      ];
 
-    function createOrder1ItemList(arr) {
-        let items = '';
-        for (let i= 0; i < arr.length; i++ ) {
-            items += `<li>${arr[i]}</li>`
-        }
-        return items;
+//     function createOrder1ItemList(arr) {
+//         let items = '';
+//         for (let i= 0; i < arr.length; i++ ) {
+//             items += `<li>${arr[i]}</li>`
+//         }
+//         return items;
+//     }
+//     document.querySelector('main').innerHTML = `
+//     <ol>
+//     ${createOrder1ItemList(order1)}
+//     </ol>`;
+
+//     const scores = [ 20, 50, 75, 100, 115 ];
+//     let total = 0;
+
+//     for (let i = 0; i < scores.length; i++) {
+//         total += scores[i];
+//     }
+
+//     console.log( total / scores.length);
+
+    const menu = ['pizza', 'cookies', 'eggs', 'apples', 'milk',
+                   'cheeze', 'bread', 'lettuce', 'carrots', 'broccoli',
+                   'potatoes', 'crackers', 'tofu', 'limes', 'cucumbers'];
+    const search = prompt('Search for a product.');
+    let message; 
+
+    if (!search) {
+        message = `<strong> Our menu consists of </strong> ${menu.join(', ')}.`;
+
     }
-    document.querySelector('main').innerHTML = `
-    <ol>
-    ${createOrder1ItemList(order1)}
-    </ol>`;
-
-    const scores = [ 20, 50, 75, 100, 115 ];
-    let total = 0;
-
-    for (let i = 0; i < scores.length; i++) {
-        total += scores[i];
+    else if (menu.includes(search.toLowerCase())) {
+        message = `Yes, we have <strong> ${search} </strong>. it's # ${menu.indexOf(search.toLowerCase()) + 1} on the list.`;
+    }   else {
+        message = `Sorry, we do not have <strong> ${search} </strong>.`;
     }
-
-    console.log( total / scores.length);
+    document.querySelector('main').innerHTML = `<p>${message}</p>`;
 
 //      console.log(order1.length)
 //      console.log(order1[0])
