@@ -1,15 +1,33 @@
-const person = {
-    name: 'Edward',
-    city: 'New York',
-    age: 37,
-    isStudent: true,
-    skills: ['JavaScript', 'HTML', 'CSS']
-};
+function submitEvent (event) {
+    event.preventDefault()
 
-person.nickname = "Duke";
-person.name = "Lizzy";
+    const name = document.getElementById('name').value
+    const phone = document.getElementById('phone').value
+    const comment = document.getElementById('comment').value
+    output.innerHTML = `Name = ${name}</br> Phone = ${phone} 
+    </br> Comment = ${comment}`
+}
 
-const message = `Hi, I'm ${person.name}, I live in ${person.city} most know me as ${person.nickname}. My 
-age is ${person.age + 5}. I have ${person.skills.length} skills. My skills are ${person.skills.join(', ').}`;
+function validatePhone (event) {
+    const regex = RegExp('\\d{10}')
 
-console.log(message)
+    const validationDiv = document.getElementById
+    ('invalidPhone')
+    if (regex.test(event.target.value)) {
+        validationDiv.style.display = 'none'
+        document.getElementById('mySubmit').disabled = false
+    } else {
+        validationDiv.style.display = 'inline'
+        document.getElementById('mySubmit').disabled = true
+    }
+}
+
+const name = document.getElementById('name')
+const output = document.getElementById('output')
+const phone = document.getElementById('phone')
+const outputPhone = document.getElementById('outputPhone')
+const comment = document.getElementById('phone')
+const outputComment = document.getElementById('outputComment')
+const form = document.getElementById('myForm')
+form.addEventListener('submit', submitEvent)
+phone.addEventListener('change', validatePhone)

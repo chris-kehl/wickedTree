@@ -6,8 +6,7 @@ for (let i = 0; i < items.length; i++) {
     html += `
     <h2>${menuItem.item}</h2>
     <img src = "${menuItem.photo}" alt="${menuItem.item}">
-    <p> cost: ${menuItem.cost}</p>
-    `;
+    <p> cost: ${menuItem.cost}</p>`;
 }
 
 main.insertAdjacentHTML('beforeend', html);
