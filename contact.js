@@ -3,6 +3,7 @@ function submitEvent (event) {
 
     const name = document.getElementById('name').value
     const phone = document.getElementById('phone').value
+    const email = document.getElementById('email').value
     const comment = document.getElementById('comment').value
     output.innerHTML = `Name = ${name}</br> Phone = ${phone} 
     </br> Comment = ${comment}`
@@ -26,6 +27,8 @@ const name = document.getElementById('name')
 const output = document.getElementById('output')
 const phone = document.getElementById('phone')
 const outputPhone = document.getElementById('outputPhone')
+const email = document.getElementById('email')
+const outputEmail = document.getElementById('outputEmail')
 const comment = document.getElementById('phone')
 const outputComment = document.getElementById('outputComment')
 const form = document.getElementById('myForm')

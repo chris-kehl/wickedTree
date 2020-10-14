@@ -1,0 +1,49 @@
+.form-contact {
+    padding: 20px 24px;
+    background: #f4f7f8;
+}
+
+.container {
+    max-width: 500px;
+    margin: auto;
+}
+
+input[type="text"] {
+    background: #fdfee6;
+    back
+}
+
+textarea[type="text"] {
+    background: #fdfee6;
+    
+    
+}
+
+input[placeholder] {
+    background: #fdfee6;
+}
+
+input[type="email"] {
+    background: #fdfee6
+}
+
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    cursor: pointer;
+}
+
+/* Dry classes */
+
+.br {
+    border-radius: .5em;
+}
+
+.avatar {
+    display: block;
+    margin: 0 auto 2em;
+}
+
+.rounded {
+    border-radius: 50%;
+}

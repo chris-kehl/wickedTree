@@ -5,27 +5,36 @@
     <meta name="viewport"
     content="width=device-width">
     <title>Wicked Tree Contact</title>
-    <link href="base.css" rel="stylesheet" type="text/css"/> 
+    <link href="selector.css" rel="stylesheet" type="text/css"/> 
   </head>
   <body>
-    <div>
-      <form id="myForm">
+    <div id="container">
+      <form class="form-contact br" id="myForm">
+        <h1>Contact</h1>
         <div>
-          <label for="name">Name:</label>
-          <input type="text" id="name" />
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Your Name">
         </div>
         <div>
-          <label for="phone">Phone:</label>
-          <input type="text" id="phone" />
-          <span id="invalidPhone" class="invalid">
-          The phone number entered is invalid</span>
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" placeholder="2701237890">
         </div>
         <div>
-          <label for="comment">Comment:</label>
-          <textArea type="text" id="comment"></textArea>
+        <span id="invalidPhone" class="invalid">
+        The phone number entered is invalid</span>
+        </div>
+        <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="email@website.com">
+        </div>
+        <div>
+        <label for="comment">Comment:</label>
+        <textArea type="text" id="comment" placeholder="Please leave comments or questions here."></textArea>
         </div>
         <input type="submit" id="mySubmit" value="Submit">
       </form>
+    </div>
+
       <div id="output"></div>
     <script src="contact.js"></script>
   </body>

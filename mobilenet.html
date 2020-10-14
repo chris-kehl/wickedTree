@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>About</title>
+    <link href="selector.css" rel="stylesheet" type="text/css"/> 
     <link href="base.css" rel="stylesheet"> 
   </head>
   <body>
@@ -18,10 +19,10 @@
     
     <!-- load the images to make the prediction -->
 
-    <img id="img" src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Beer_Mythos_Chania.jpg" width = '512px' crossorigin="" />
+    <img class="avatar rounded" id="img" src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Beer_Mythos_Chania.jpg" width = '512px' crossorigin="" />
     <p id="prediction_output">Loading predictions...</p>
     <!-- image of beer -->
-    <img id="img2" src="https://upload.wikimedia.org/wikipedia/commons/6/64/The_Puppy.jpg" width = '512px' crossorigin="" />
+    <img class="avatar rounded" id="img2" src="https://upload.wikimedia.org/wikipedia/commons/6/64/The_Puppy.jpg" width = '512px' crossorigin="" />
     <p id="prediction_output2">Loading predictions...</p>
     <script>
      const image = document.getElementById("img");
