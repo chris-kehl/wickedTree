@@ -87,3 +87,17 @@ img {
 	padding-right: 1em;
 	padding-left: 1em;
 }
+
+DRY  */
+
+.rounded {
+    border-radius: 50%;
+}
+
+/* Structural Pseudo-classes */
+
+li:first-child {
+	background: #52bab3;
+	color: #fff;
+}
+

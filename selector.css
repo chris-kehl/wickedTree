@@ -1,6 +1,7 @@
 .form-contact {
     padding: 20px 24px;
     background: #f4f7f8;
+    align-content: center;
 }
 
 .container {
@@ -10,13 +11,10 @@
 
 input[type="text"] {
     background: #fdfee6;
-    back
 }
 
 textarea[type="text"] {
-    background: #fdfee6;
-    
-    
+    background: #fdfee6; 
 }
 
 input[placeholder] {
@@ -25,12 +23,6 @@ input[placeholder] {
 
 input[type="email"] {
     background: #fdfee6
-}
-
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-    cursor: pointer;
 }
 
 /* Dry classes */
@@ -47,3 +39,44 @@ input[type="submit"] {
 .rounded {
     border-radius: 50%;
 }
+
+.btn {
+    cursor: pointer;
+    font-size: .875em;
+    font-weight: 400;
+    color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    opacity: .75;
+}
+
+.default {
+    background-color: #52bab3;
+}
+
+.error {
+    background-color: #ff784f;
+}
+.lbl {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+@media (min-width: 769px) {
+    .inline {
+        width: auto;
+        display: inline-block
+    }
+    .btn + .btn {
+        margin-left: 20px;
+    }
+}
+
+/* Combinators */
+
+
+

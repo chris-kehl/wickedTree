@@ -12,26 +12,27 @@
       <form class="form-contact br" id="myForm">
         <h1>Contact</h1>
         <div>
-        <label for="name">Name:</label>
-        <input type="text" id="name" placeholder="Your Name">
+        <label class="lbl" for="name">Name:</label>
+        <input class="lbl type="text" id="name" placeholder="Your Name">
         </div>
         <div>
-        <label for="phone">Phone:</label>
-        <input type="text" id="phone" placeholder="2701237890">
+        <label class="lbl" for="phone">Phone:</label>
+        <input class="lbl" type="text" id="phone" placeholder="2701237890">
         </div>
         <div>
-        <span id="invalidPhone" class="invalid">
-        The phone number entered is invalid</span>
+        <!-- <span id="invalidPhone" class="invalid">
+        The phone number entered is invalid</span> -->
         </div>
         <div>
-        <label for="email">Email</label>
-        <input type="email" id="email" placeholder="email@website.com">
+        <label class="lbl"  for="email">Email</label>
+        <input class="lbl"  type="email" id="email" placeholder="email@website.com">
         </div>
         <div>
-        <label for="comment">Comment:</label>
-        <textArea type="text" id="comment" placeholder="Please leave comments or questions here."></textArea>
+        <label class="lbl"  for="comment">Comment:</label>
+        <textArea class="lbl"  type="text" id="comment" placeholder="Please leave comments or questions here."></textArea>
         </div>
-        <input type="submit" id="mySubmit" value="Submit">
+        <input class="btn inline default" type="submit" id="mySubmit" value="Submit">
+        <input class="btn inline error" type="reset" id="myReset" value="reset">
       </form>
     </div>
 
