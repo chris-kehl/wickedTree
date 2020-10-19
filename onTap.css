@@ -1,21 +1,32 @@
-/* Structural Pseudo-classes */
+:root {
+    background: #C2BC74;
+}
+h1:nth-child(n) {
+    background: #C2BC74;
+    color: #807E82;
 
-li:first-child {
-	background: #52bab3;
-	color: #fff;
+}
+:target {
+    background: #384047 ;
+    color: #6E615A;
 }
 
-li:last-child {
-    border: none;
-   top: 5.px;
+#col-c:target {
+    background: #eff1f2;
+    color: initial;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .2);
 }
 
-span:only-child {
-    color: #52bab3;
-    font-size: 1.5em;
+li:nth-child(2n) {
+    background: #6E615A;
+    color: #B8B8B8;
+    border: solid 2px #C2BC74;
 }
 
-li:empty {
-    background-color: tomato;
+li:nth-child(odd) {
+    background: #E3CCA1;
+    color: #6E615A;
+    border: solid 2px #C2BC74;
 }
+
 

@@ -76,7 +76,15 @@ input[type="email"] {
     }
 }
 
-/* Combinators */
+/* UI element states pseudo classes */
 
+input:focus,
+text:focus {
+    border-color: #52bab3 ;
+}
+
+:disabled {
+    background-color: gray;
+}
 
 
