@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Selector Page</title>
+
+    <style>
+        li:hover {
+            background-color: white;
+        }
+        #mylist{
+            background-color: rgb(111, 114, 114);
+        }
+       li#second_list:hover{
+           background-color: lawngreen;
+       }
+    </style>
+    <script>
+        function addAnotherItem(){
+           // ask for an item to be added
+           let itemToAdd = "Llama";
+           // go find the list on DOM (use id)
+           let myList = document.getElementById("myList");
+           // ???
+           let newListItem = document.createElement("li");
+           newListItem.innerText = itemToAdd;
+           // Place item in list
+           myList.append(newListItem);
+        }
+
+    </script>
+    </head>
+    <body>
+        <ul id="mylist">
+            <li id="first_list" class="list_item">One</li>
+            <li id="Second_list" class="list_item">Two</li>
+            <li id="Third_list" class="list_item">Three</li>
+        </ul>
+
+        <button onclick="addAnotherItem()">Click Me</button>
+    </body>
+</html>

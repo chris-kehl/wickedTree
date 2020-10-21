@@ -76,15 +76,13 @@ input[type="email"] {
     }
 }
 
-/* UI element states pseudo classes */
-
-input:focus,
-text:focus {
-    border-color: #52bab3 ;
+input:not([type="submit"]) {
+    box-shadow: inset 0 2px 0 rgba(0,0,0, .15);
 }
 
-:disabled {
-    background-color: gray;
+.comment {
+    box-shadow: inset 0 2px 0 rgba(0,0,0, .15);
 }
+
 
 

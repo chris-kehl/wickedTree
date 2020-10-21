@@ -94,4 +94,22 @@ DRY  */
     border-radius: 50%;
 }
 
+/* pseudo-element */
+
+.intro::first-line {
+	font-weight: bold;
+	font-size: 1.4em;
+}
+
+.intro::first-letter {
+	float: left;
+	font-size: 80px;
+	color: #ffffff;
+	padding: 5px 10px;
+	background: #5f5426;
+	margin: 10px 10px 0 0;
+	border-radius: 5px;
+	line-height: 1;
+}
+
 
