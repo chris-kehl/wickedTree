@@ -41,7 +41,8 @@ img {
 /* ------ Navigation ------- */
 
 .name {
-	font-size: 1.35em;
+	/* font-size: 1.35em; */
+	font-size: 4vh;
 	margin: 0;
 }
 .main-nav {
@@ -58,7 +59,7 @@ img {
 .name a,
 .main-nav a {
 	font-size: .95em;
-	color: #3acec2;
+	color: #3a3a3a;
 	text-transform: uppercase;
 }
 .name a,
@@ -78,7 +79,7 @@ img {
 	text-align: center;
 }
 .banner {
-	color:#fff;
+	color:#ffffff;
 	background: #5F5426;
 	padding: 1.8em 0;
 	margin-bottom: 32px;
@@ -111,5 +112,3 @@ DRY  */
 	border-radius: 5px;
 	line-height: 1;
 }
-
-

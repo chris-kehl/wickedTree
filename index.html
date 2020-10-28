@@ -5,41 +5,45 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Wicked Tree Brewing Co.</title>
         <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="base.css">
-        <link rel="stylesheet" href="flexbox.css" >
+        <link rel="stylesheet" href="./css/flexbox.css">
+        <link rel="stylesheet" href="./css/base.css" >
     </head>
     <body>
-        <header class="main-header">
+        <header tabindex="1" role="banner" class="main-header">
             <h1 class="name">
                 <a href="#">Wicked Tree Brewing Co.</a>
             </h1>
+            <!-- <nav role = "navigation" class="main-nav"> -->
+                <!-- adding nav block for user accessibility -->
             <li>
-                <a href="onTap.html">on tap</a>
+                <a tabindex="2" href="./html/onTap.html">on tap</a>
             </li>
             <li>
-                <a href="menu.html">menu</a>
+                <a tabindex="3" href="./html/menu.html">menu</a>
             </li>
             <li>
-                <a href="mobilenet.html">about</a>
+                <a tabindex="4"  href="./html/mobilenet.html">about</a>
             </li>
             <li>
-                <a href="contact.html">contact</a>
+                <a tabindex="5" href="./html/contact.html">contact</a>
             </li>
+        <!-- </nav> -->
         </header>
         <div class="banner">
             <img class="logo" src="images/Barren-Tree-Silhouette-3.png" alt="Wicked Tree">
-       <h1 class="headline">Wicked Tree</h1>
+       <h1 tabindex="6"  class="headline">Wicked Tree</h1>
        <span class="tagline">Come on in and enjoy some of Louisville's best Ales.</span>
         </div>
-        <div class="row">
+        <!-- adding role as an accessibility tool -->
+        <main role="main" class="row">
             <div class="primary col">
-                <h2>Welcome!</h2>
-                <p class="intro">Wicked Tree brewing is committed to blend the traditions of Old English Breweries with todays comforts and delights.<br>
+                <h2 tabindex="7">Welcome!</h2>
+                <p  tabindex="8" class="intro">Wicked Tree brewing is committed to blend the traditions of Old English Breweries with todays comforts and delights.<br>
                 <br>Our recipes are created using artificial intelligence to develop recipes that are known to give top rankings.<br> The same algorithms that
             provide you with the highest recommendations of movies, is also used to generate our beer recipes. </p>
-                <p>Whether your just visiting Louisville for the weekend, or a Local regular, we want this to be your favorite pub.</p>
+                <p tabindex="9">Whether your just visiting Louisville for the weekend, or a Local regular, we want this to be your favorite pub.</p>
             </div>
-        </div>
+        </main>
         <footer class="main-footer">
             <div class="footer-inner">
                 <span>©2020 Wicked Tree Brewing Co.</span>
