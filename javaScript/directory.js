@@ -1,4 +1,5 @@
 const main = document.querySelector('main');
+
 let html = '';
 
 for (let i = 0; i < items.length; i++) {

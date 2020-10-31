@@ -1,62 +1,46 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-	<title>Menu</title>
-	<link rel="stylesheet" type="text/css" href="css/base.css">
-	<link rel="stylesheet" type="text/css" href="css/flexbox.css">
-  </head>
-  <style>
-		body {
-			font-family: 'Nunito', sans-serif;
-			color: #616161;
-			padding: 40px 0;
-		}
-		h1 {
-      text-align: center;
-    }
-		ul {
-			list-style: none;
-			width: 50%;
-			margin: auto;
-		}
-		li {
-			border-bottom: 1px dotted #40918c;
-			padding: 15px 10px;
-		}
-	</style>
-</head>
-<body>
-	<header class="main-header">
-		<h1 class="name">
-			<a href="index.html">Wicked Tree Brewing Co.</a>
-		</h1>
-		<li>
-			<a href="onTap.html">on tap</a>
-		</li>
-		<li>
-			<a href="menu.html">menu</a>
-		</li>
-		<li>
-			<a href="mobilenet.html">about</a>
-		</li>
-		<li>
-			<a href="contact.html">contact</a>
-		</li>
-	</header>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Wicked Tree Brewing Co.</title>
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="css/base.css" >
+	    <link rel="stylesheet" type="text/css" href="css/flexbox.css">
+    </head>
+    <body>
+        <header tabindex="1" role="banner" class="main-header">
+            <h1 class="name">
+                <a href="index.html">Wicked Tree Brewing Co.</a>
+            </h1>
+            <!-- <nav role = "navigation" class="main-nav"> -->
+                <!-- adding nav block for user accessibility -->
+            <li>
+                <a tabindex="2" href="onTap.html">on tap</a>
+            </li>
+            <li>
+                <a tabindex="3" href="menu.html">menu</a>
+            </li>
+            <li>
+                <a tabindex="4"  href="mobilenet.html">about</a>
+            </li>
+            <li>
+                <a tabindex="5" href="contact.html">contact</a>
+            </li>
+        </header>
 
-  <h1>Beers on Tap</h1>
+  <h1 id="myHeading">Beers on Tap</h1>
 	<ul>
-		<li>Item 1</li>
-		<li>Item 2<span>&check;</span></li>
-		<li>Item 3</li>
-		<li>Item 4</li>
-		<li>Item 5</li>
-		<li>Item 6<span>&check;</span></li>
-		<li>Item 7</li>
-		<li>Item 8</li>
-		<li>Item 9</li>
-		<li>Item 10</li>		
+		<li>(1.) Wales Bombardier English Ale</li>
+		<li>(2.) Sweet Ginger Brown (English Ale)<span>&check;</span></li>
+		<li>(3.) Dark English Ale </li>
+		<li>(4.) Sudwerks Octoberfest</li>
+		<li>(5.) Cincy Red Octoberfest</li>
+		<li>(6.) Run of the Mill Porter</li>
+		<li>(7.) Smoked Porter</li>
+		<li>(8.) Louisville Stout</li>
+		<li>(9.) Nitro-Powered Stout</li>
+		<li>(10.) Walt Whitman Pilsner</li>		
 	</ul>
+	<script src="javaScript/custom.js"></script>
 </body>
 </html>

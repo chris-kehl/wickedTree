@@ -9,23 +9,27 @@
   </head>
   <body>
     <main>
-      <header class="main-header">
-        <h1 class="name">
-          <a href="index.html">Wicked Tree Brewing Co.</a>
-        </h1>
-        <li>
-          <a href="onTap.html">on tap</a>
-        </li>
-        <li>
-          <a href="menu.html">menu</a>
-        </li>
-        <li>
-          <a href="mobilenet.html">about</a>
-        </li>
-        <li>
-          <a href="contact.html">contact</a>
-        </li>
-      </header>
+      <body>
+        <header tabindex="1" role="banner" class="main-header">
+            <h1 id='myHeading' class="name">
+                <a href="index.html">Wicked Tree Brewing Co.</a>
+            </h1>
+            <!-- <nav role = "navigation" class="main-nav"> -->
+                <!-- adding nav block for user accessibility -->
+            <li>
+                <a tabindex="2" href="onTap.html">on tap</a>
+            </li>
+            <li>
+                <a tabindex="3" href="menu.html">menu</a>
+            </li>
+            <li>
+                <a tabindex="4"  href="mobilenet.html">about</a>
+            </li>
+            <li>
+                <a tabindex="5" href="contact.html">contact</a>
+            </li>
+        <!-- </nav> -->
+        </header>
         <h1>
             Using Deep Learning Algorithms to make Predictions. 
         </h1>
@@ -65,6 +69,7 @@
         });
        </script>
    </main>
+   <script src="javaScript/custom.js"></script>
   </body>
 </html>
 
