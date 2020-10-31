@@ -1,23 +1,19 @@
-/* ==========================
-   Base Style
-============================ */
 
-body {
-    display: flex 0 0 auto;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-.row {
-    flex: 1;
-}
-
-/* ===============================
-   Media Queries
-================================= */
-
-@media (min-width: 769px) {
-
+  /* Larger than mobile */
+  @media (min-width: 400px) {
+    .main-header,
+    .main-nav {
+        display: flex;
+    }
+    .main-header,
+    .main-nav  {
+        flex-direction: column;
+        align-items: center;
+    }
+  }
+  
+  /* Larger than phablet (also point when grid becomes active) */
+  @media (min-width: 550px) {
     .main-header,
     .main-nav {
         display: flex;
@@ -26,11 +22,31 @@ body {
         flex-direction: column;
         align-items: center;
     }
-}
-
-@media (min-width: 1025px) {
-    .main-header {
+  }
+  
+  /* Larger than tablet */
+  @media (min-width: 750px) {
+    .main-header,
+    .main-nav  {
+        flex-direction: column;
+        align-items: center;
+ 
+  }
+  
+  /* Larger than desktop */
+  @media (min-width: 1000px) {
+    .main-header,
+    .main-nav {
         flex-direction: row;
         justify-content: space-evenly;
     }
-}
+  }
+  
+  /* Larger than Desktop HD */
+  @media (min-width: 1200px) {
+    .main-header,
+    .main-nav {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+  }

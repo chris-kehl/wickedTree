@@ -7,39 +7,47 @@
         <link rel="stylesheet" type="text/css" href="css/base.css" >
 	    <link rel="stylesheet" type="text/css" href="css/flexbox.css">
     </head>
-    <body>
-        <header tabindex="1" role="banner" class="main-header">
-            <h1 class="name">
-                <a href="index.html">Wicked Tree Brewing Co.</a>
-            </h1>
-            <!-- <nav role = "navigation" class="main-nav"> -->
-                <!-- adding nav block for user accessibility -->
-            <li>
-                <a tabindex="2" href="onTap.html">on tap</a>
-            </li>
-            <li>
-                <a tabindex="3" href="menu.html">menu</a>
-            </li>
-            <li>
-                <a tabindex="4"  href="mobilenet.html">about</a>
-            </li>
-            <li>
-                <a tabindex="5" href="contact.html">contact</a>
-            </li>
-        </header>
+		<body>
+			<nav>
+			<!-- code to add the main menu, tab index created for accessibility -->
+			<header tabindex="1" role="banner" class="main-header">
+				<h1 class="name">
+					<a href="index.html">Wicked Tree Brewing Co.</a>
+				</h1>
+				<!-- <nav role = "navigation" class="main-nav"> -->
+					<!-- adding nav block for user accessibility -->
+				<li>
+					<a tabindex="2" href="onTap.html">on tap</a>
+				</li>
+				<li>
+					<a tabindex="3" href="menu.html">menu</a>
+				</li>
+				<li>
+					<a tabindex="4"  href="mobilenet.html">about</a>
+				</li>
+				<li>
+					<a tabindex="5" href="contact.html">contact</a>
+				</li>
+			</nav>
+			</header>
+		<div class="banner">
+            <img class="logo" src="./img/Barren-Tree-Silhouette-3.png" alt="Wicked Tree">
+       <h1 tabindex="6"  class="headline">Wicked Tree</h1>
+       <span class="tagline">Come on in and enjoy some of Louisville's best Ales.</span>
+        </div>
 
   <h1 id="myHeading">Beers on Tap</h1>
 	<ul>
-		<li>(1.) Wales Bombardier English Ale</li>
-		<li>(2.) Sweet Ginger Brown (English Ale)<span>&check;</span></li>
-		<li>(3.) Dark English Ale </li>
-		<li>(4.) Sudwerks Octoberfest</li>
-		<li>(5.) Cincy Red Octoberfest</li>
-		<li>(6.) Run of the Mill Porter</li>
-		<li>(7.) Smoked Porter</li>
-		<li>(8.) Louisville Stout</li>
-		<li>(9.) Nitro-Powered Stout</li>
-		<li>(10.) Walt Whitman Pilsner</li>		
+		<li class='odd'>(1.) Wales Bombardier English Ale</li>
+		<li class='even'>(2.) Sweet Ginger Brown (English Ale)<span>&check;</span></li>
+		<li class='odd'>(3.) Dark English Ale </li>
+		<li class='even'>(4.) Sudwerks Octoberfest</li>
+		<li class='odd'>(5.) Cincy Red Octoberfest</li>
+		<li class='even'>(6.) Run of the Mill Porter</li>
+		<li class='odd'>(7.) Smoked Porter</li>
+		<li class='even'>(8.) Louisville Stout</li>
+		<li class='odd'>(9.) Nitro-Powered Stout</li>
+		<li class='even'>(10.) Walt Whitman Pilsner</li>		
 	</ul>
 	<script src="javaScript/custom.js"></script>
 </body>

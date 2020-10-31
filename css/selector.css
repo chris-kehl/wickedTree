@@ -41,7 +41,8 @@ img {
 /* ------ Navigation ------- */
 
 .name {
-	font-size: 1.35em;
+	/* font-size: 1.35em; */
+	font-size: 4vh;
 	margin: 0;
 }
 .main-nav {
@@ -58,12 +59,58 @@ img {
 .name a,
 .main-nav a {
 	font-size: .95em;
-	color: #3acec2;
+	color: #3a3a3a;
 	text-transform: uppercase;
 }
 .name a,
 .main-nav a:hover {
 	color: #093a58;
+}
+
+/* --------Layout Container --------- */
+
+.main-header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+}
+
+.banner,
+.main-footer {
+	text-align: center;
+}
+.banner {
+	color:#ffffff;
+	background: #5F5426;
+	padding: 1.8em 0;
+	margin-bottom: 32px;
+}
+.col {
+	padding-right: 1em;
+	padding-left: 1em;
+}
+
+DRY  */
+
+.rounded {
+    border-radius: 50%;
+}
+
+/* pseudo-element */
+
+.intro::first-line {
+	font-weight: bold;
+	font-size: 1.4em;
+}
+
+.intro::first-letter {
+	float: left;
+	font-size: 80px;
+	color: #ffffff;
+	padding: 5px 10px;
+	background: #5f5426;
+	margin: 10px 10px 0 0;
+	border-radius: 5px;
+	line-height: 1;
 }
 
 /* --------Layout Container --------- */
