@@ -8,6 +8,8 @@
 body {
 	font-family: 'Varela Round', sans-serif;
 	line-height: 1.6;
+	font-family: 'Londrina Sketch';
+	font-size: 22px;
 	color: #3a3a3a;
 	margin: 0;
 }
@@ -20,6 +22,10 @@ ul {
 h2, 
 h3, 
 a {
+font-family: 'Londrina Sketch';
+font-size: 22px;
+color: #3a3a3a;
+margin: 0;
 color: #3a3a3a;
 
 }
@@ -84,6 +90,15 @@ img {
 	padding: 1.8em 0;
 	margin-bottom: 32px;
 }
+.chalkboard{
+	background: black;
+	padding: 1.8em 0;
+	margin-bottom: 32px;
+	text-align: center;
+	font-family: 'Indie Flower';
+	font-size: 22px;
+}
+
 .col {
 	padding-right: 1em;
 	padding-left: 1em;
