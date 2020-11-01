@@ -1,4 +1,18 @@
 
+   /* Larger than mobile */
+   @media (min-width: 200px) {
+    .main-header,
+    .main-nav {
+        display: flex;
+    }
+    .main-header,
+    .main-nav  {
+        flex-direction: column;
+        list-style: decimal-leading-zero;
+        list-style: none;
+    }
+  }
+  
   /* Larger than mobile */
   @media (min-width: 400px) {
     .main-header,
@@ -32,6 +46,7 @@
     .main-header,
     .main-nav  {
         display: flex;
+        list-style: none;
     }
     .main-header {
         flex-direction: row;
