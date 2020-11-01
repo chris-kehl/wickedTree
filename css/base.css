@@ -8,7 +8,7 @@
 body {
 	font-family: 'Varela Round', sans-serif;
 	line-height: 1.6;
-	font-family: 'Londrina Sketch';
+	font-family: 'Open Sans';
 	font-size: 22px;
 	color: #3a3a3a;
 	margin: 0;
@@ -23,7 +23,7 @@ h2,
 h3, 
 a {
 font-family: 'Londrina Sketch';
-font-size: 22px;
+font-size: 1.35em;
 color: #3a3a3a;
 margin: 0;
 color: #3a3a3a;
@@ -32,6 +32,7 @@ color: #3a3a3a;
 h2,
 h3 {
 	margin-top: 0;
+	font-family: 'Open Sans';
 }
 a {
 	text-decoration: dashed;
@@ -48,11 +49,13 @@ img {
 
 .name {
 	/* font-size: 1.35em; */
-	font-size: 4vh;
+	font-family: 'Open Sans';
+	font-size: 22px;
 	margin: 0;
 }
 .main-nav {
 	margin-top: 5px;
+	
 }
 
 /* centers the wicked tree top heading */
@@ -61,6 +64,21 @@ img {
 	text-align: center;
 	display: block;
 	padding: 10px 15px;
+	font-family: 'Open Sans';
+	font-size: 1.35em;
+}
+
+/* formats the list items in the top menu */
+.list {
+	font-family: 'Open Sans';
+	font-size: 1em;
+}
+
+/* change font of Wicked tree in banner to Londrina Sketch */
+.headline {
+	font-family: 'Londrina Sketch';
+	font-size: 1.5em;
+
 }
 .name a,
 .main-nav a {
@@ -78,6 +96,7 @@ img {
 .main-header {
 	padding-top: .5em;
 	padding-bottom: .5em;
+
 }
 
 .banner,
@@ -90,6 +109,7 @@ img {
 	padding: 1.8em 0;
 	margin-bottom: 32px;
 }
+/* format for chalkboard appearance for the onTap page */
 .chalkboard{
 	background: black;
 	padding: 1.8em 0;
