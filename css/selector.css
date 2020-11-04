@@ -105,11 +105,11 @@ input[type="email"] {
 }
 
 .default {
-    background-color: #52bab3;
+    background-color: #008000;
 }
 
 .error {
-    background-color: #ff784f;
+    background-color: #D50000;
 }
 .lbl {
     margin-bottom: 10px;
