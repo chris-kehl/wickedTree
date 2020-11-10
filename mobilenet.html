@@ -35,46 +35,54 @@
        <h1 tabindex="6"  class="headline">Wicked Tree</h1>
        <span class="tagline">Come on in and enjoy some of Louisville's best Ales.</span>
         </div>
-        <h1>
-            Using Deep Learning Algorithms to make Predictions. 
+        <h1 class="aboutH1">
+            Using Deep Learning Algorithms to make unique novel recipes. 
         </h1>
-    <main>
-    <!-- import the tensorflow bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
-    <!-- import mobilenet -->
-    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet@1.0.0"></script>
-    
-    <!-- load the images to make the prediction -->
-
-    <img class="avatar rounded" id="img" src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Beer_Mythos_Chania.jpg" width = '512px' crossorigin="" alt="Glass of Beer"/>
-    <p id="prediction_output">Loading predictions...</p>
-    <!-- image of beer -->
-    <img class="avatar rounded" id="img2" src="https://upload.wikimedia.org/wikipedia/commons/6/64/The_Puppy.jpg" width = '512px' crossorigin="" alt="Eskimo Puppy" />
-    <p id="prediction_output2">Loading predictions...</p>
-    <script>
-     const image = document.getElementById("img");
-     const predictionOutput = document.getElementById("prediction_output");
-    
-     // Load the model.   
-     mobilenet.load().then(model => {
-       // Classify the image.
-       model.classify(image).then(predictions => {
-         predictionOutput.innerText = "The top prediction is " + predictions[0].className ;
-       });
-     });
-    </script>
-    <script>
-        const image2 = document.getElementById("img2");
-        const predictionOutput2 = document.getElementById("prediction_output2");
-        mobilenet.load().then(model => {
-          // Classify the image.
-          model.classify(image2).then(predictions2 => {
-            predictionOutput2.innerText = "The top prediction is " + predictions2[0].className ;
-          });
-        });
-       </script>
-   </main>
-   <script src="javaScript/custom.js"></script>
+        <div class="aboutH2">Wicked tree uses artificial intelligence (AI) to discover and create 
+            new beer recipes that are beyond traditional brewing recipes. 
+            Through data driven technologies we are identify patterns and novel 
+            combinations of flavors to generate great beer recipes<br></div>
+    <div class="row">
+            <div class="column" id="aboutH3"><br>We use similar Artificial Intelligence deep learning algorithms throughout our business model. An example is how we use 
+                simple object detection to detect the glass of beer. In our processes, we use the object detection models for quality 
+                assurance of our products.<br> <br>If you happened to miss the algorithm predicting the glass of beer, hit the refresh page.
+    </div>
+            <div class="column">
+            <main class="main">
+            <!-- import the tensorflow bundle -->
+            <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+            <!-- import mobilenet -->
+            <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet@1.0.0"></script>
+            
+            <!-- load the images to make the prediction -->
+             <!-- image of beer -->
+            <img class="rounded" id="img" src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Beer_Mythos_Chania.jpg" width = '500px' crossorigin="" alt="Glass of Beer"/>
+            <p id="prediction_output">Loading predictions...</p>
+            <script>
+            const image = document.getElementById("img");
+            const predictionOutput = document.getElementById("prediction_output");
+            
+            // Load the model.   
+            mobilenet.load().then(model => {
+            // Classify the image.
+            model.classify(image).then(predictions => {
+                predictionOutput.innerText = "The top prediction is " + predictions[0].className ;
+            });
+            });
+            </script>
+            <!-- <script>
+                const image2 = document.getElementById("img2");
+                const predictionOutput2 = document.getElementById("prediction_output2");
+                mobilenet.load().then(model => {
+                // Classify the image.
+                model.classify(image2).then(predictions2 => {
+                    predictionOutput2.innerText = "The top prediction is " + predictions2[0].className ;
+                });
+                });
+            </script> -->
+        </main>
+    </div>
+   <!-- <script src="javaScript/custom.js"></script> -->
    <footer class="main-footer">
 	<div class="footer-inner">
 		<span>©2020 Wicked Tree Brewing Co.</span>

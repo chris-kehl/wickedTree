@@ -112,7 +112,7 @@ img {
 /* format for chalkboard appearance for the onTap page */
 .chalkboard{
 	background: black;
-	padding: 1.8em 0;
+	padding: .1em 0;
 	margin-bottom: 32px;
 	text-align: center;
 	font-family: 'Indie Flower';
@@ -148,6 +148,43 @@ DRY  */
 	line-height: 1;
 }
 
-.accessibilityBody {
-	background: #5f5426;
+.aboutH1 {
+	font-family: 'Varela Round', sans-serif;
+	line-height: 1.6;
+	font-family: 'Open Sans';
+	font-size: 1.5em;
+}
+.aboutH2 {
+	font-family: 'Varela Round', sans-serif;
+	line-height: 1.6;
+	font-size: 1.3em;
+}
+.aboutH3 {
+	font-family: 'Varela Round', sans-serif;
+	font-size: 1.3em;
+}
+
+.main {
+	font-family: 'Varela Round', sans-serif;
+	font-size: 1.3em;
+}
+
+/* creates the column layout on the about page */
+.column {
+	float:right;
+	width: 50%
+}
+
+/* formating the about page */
+
+#aboutH3 {
+	font-family: 'Varela Round', sans-serif;
+	font-size: 1.2em;
+}
+
+/* Clear floats after the column */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
 }
