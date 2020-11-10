@@ -147,3 +147,7 @@ DRY  */
 	border-radius: 5px;
 	line-height: 1;
 }
+
+.accessibilityBody {
+	background: #5f5426;
+}
