@@ -23,7 +23,7 @@ We use a deep learning algorithm in the about.html file.  Since I am exploring d
 
 # Accessibility
 
-This site used the web accessibility evaluation tool (WWAVE) to test for flawed accessibility features and compatibility. To view the evaluation generated from the site please view the following URL.
+This site used the web accessibility evaluation tool (WWAVE) to test for flawed accessibility features and compatibility. To view the evaluation generated from the site please view the following URL: https://chris-kehl.github.io/wickedTree/accessibility.html
 
 If you would like to preview the entire website, it is hosted on the project github page at the following URL: https://chris-kehl.github.io/wickedTree/index.html
 
