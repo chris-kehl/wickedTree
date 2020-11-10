@@ -7,7 +7,7 @@ const items = [
 
    {
        item: 'ontap',
-       photo: './img/accessibility_ontap.png',
+       photo: './img/accessibility_onTap.png',
 
    },
 
