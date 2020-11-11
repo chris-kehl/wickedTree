@@ -127,7 +127,9 @@ img {
 DRY  */
 
 .rounded {
-    border-radius: 50%;
+	border-radius: 50%;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
 }
 
 /* pseudo-element */
@@ -148,43 +150,7 @@ DRY  */
 	line-height: 1;
 }
 
-.aboutH1 {
-	font-family: 'Varela Round', sans-serif;
-	line-height: 1.6;
-	font-family: 'Open Sans';
-	font-size: 1.5em;
-}
-.aboutH2 {
-	font-family: 'Varela Round', sans-serif;
-	line-height: 1.6;
-	font-size: 1.3em;
-}
-.aboutH3 {
-	font-family: 'Varela Round', sans-serif;
-	font-size: 1.3em;
-}
-
-.main {
-	font-family: 'Varela Round', sans-serif;
-	font-size: 1.3em;
-}
-
-/* creates the column layout on the about page */
-.column {
-	float:right;
-	width: 50%
-}
-
-/* formating the about page */
-
-#aboutH3 {
-	font-family: 'Varela Round', sans-serif;
-	font-size: 1.2em;
-}
-
-/* Clear floats after the column */
-.row:after {
-	content: "";
-	display: table;
-	clear: both;
+.main-footer {
+	padding-top: .5em;
+	padding-bottom: .5em;
 }
