@@ -26,9 +26,8 @@ font-family: 'Londrina Sketch';
 font-size: 1.35em;
 color: #3a3a3a;
 margin: 0;
-color: #3a3a3a;
-
 }
+
 h2,
 h3 {
 	margin-top: 0;
@@ -108,6 +107,9 @@ img {
 	background: #5F5426;
 	padding: 1.8em 0;
 	margin-bottom: 32px;
+}
+.items {
+	color:#ffffff;
 }
 /* format for chalkboard appearance for the onTap page */
 .chalkboard{

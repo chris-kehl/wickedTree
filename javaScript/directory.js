@@ -5,7 +5,7 @@ let html = '';
 for (let i = 0; i < items.length; i++) {
     let menuItem = items[i];
     html += `
-    <h2>${menuItem.item}</h2>
+    <p>${menuItem.item}</p>
     <img src = "${menuItem.photo}" alt="${menuItem.item}">
     <p> cost: ${menuItem.cost}</p>`;
 }
