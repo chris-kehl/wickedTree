@@ -29,6 +29,19 @@
            <a tabindex="5" class="list" href="contact.html">contact</a>
        </li>
    </nav>
+   <script>
+    window.watsonAssistantChatOptions = {
+        integrationID: "24238d27-b1a8-4183-98c1-75ce56c20bb1", // The ID of this integration.
+        region: "us-south", // The region your integration is hosted in.
+        serviceInstanceID: "5b8ad7b8-2aea-44b6-ac5b-a7f4dba081ab", // The ID of your service instance.
+        onLoad: function(instance) { instance.render(); }
+      };
+    setTimeout(function(){
+      const t=document.createElement('script');
+      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+      document.head.appendChild(t);
+    });
+  </script>
    </header>
         <main class="banner">
         <h1> Food Menu</h1>
